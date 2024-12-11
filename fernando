@@ -1,0 +1,17 @@
+# Clase para representar un automóvil de manera simplificada
+class sdAutomovilSimplificado:
+    def __init__(self, motor, ruedas, tipo_combustible, sistema_frenos):
+        self.motor = motor  # Esencial para el funcionamiento
+        self.ruedas = ruedas  # Esencial para el movimiento
+        self.tipo_combustible = tipo_combustible  # Esencial para alimentar el motor
+        self.sistema_frenos = sistema_frenos  # Esencial para la seguridad
+
+    def describir(self):
+        return (f"Automóvil con motor: {self.motor}, ruedas: {self.ruedas}, "
+                f"tipo de combustible: {self.tipo_combustible}, sistema de frenos: {self.sistema_frenos}.")
+
+# Crear una instancia del automóvil simplificado
+auto = AutomovilSimplificado(motor="V6", ruedas=4, tipo_combustible="Gasolina", sistema_frenos="Disco")
+
+# Imprimir la descripción del automóvil
+print(auto.describir())
